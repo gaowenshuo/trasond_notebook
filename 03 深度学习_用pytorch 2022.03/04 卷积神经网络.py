@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+import torch.optim as optim
 from torch.autograd import Variable
 from torch.utils.data import DataLoader
 from torchvision import datasets , transforms
@@ -57,7 +58,6 @@ if use_gpu:
 # 定义loss和optimizer
 criterion = nn.CrossEntropyLoss ()
 optimizer = optim.SGD ( model.parameters () , lr=learning_rate )
-logger = Logger ( './logs' )
 # 开始训练
 for epoch in range ( num_epoches ):
     print ( 'epoch {}'.format ( epoch + 1 ) )
