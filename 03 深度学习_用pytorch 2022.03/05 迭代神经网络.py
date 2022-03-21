@@ -21,7 +21,7 @@ train_loader = DataLoader ( train_dataset , batch_size=batch_size , shuffle=True
 test_loader = DataLoader ( test_dataset , batch_size=batch_size , shuffle=False )
 
 
-# 迭代神经网络模型
+# 迭代神经网络模型-Recurrent Neural Network
 class RNNet ( nn.Module ):
     def __init__(self , input_dim , hidden_dim , n_layers , n_classes):
         super ( RNNet , self ).__init__ ()
