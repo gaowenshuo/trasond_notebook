@@ -25,7 +25,7 @@ train_loader = DataLoader ( train_dataset , batch_size=batch_size , shuffle=True
 test_loader = DataLoader ( test_dataset , batch_size=batch_size , shuffle=False )
 
 
-# 卷积神经网络模型
+# 卷积神经网络模型-Convolutional Neural Network
 class CNNet ( nn.Module ):
     def __init__(self , input_dim , n_classes):
         super ( CNNet , self ).__init__ ()
